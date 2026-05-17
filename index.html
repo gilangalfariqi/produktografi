@@ -174,10 +174,10 @@
 
         /* Gallery selected state */
         .gallery-selected {
-            box-shadow: 0 8px 30px rgba(0,0,0,0.6), 0 0 0 4px rgba(253,178,42,0.12) inset;
-            border: 1.5px solid rgba(253,178,42,0.9);
-            transform: scale(1.02);
-            transition: box-shadow 200ms ease, transform 200ms ease, border 200ms ease;
+            box-shadow: none;
+            border: 1px solid rgba(253,178,42,0.12);
+            transform: none;
+            transition: border 150ms ease;
         }
         /* Make hover behavior available on mobile when item is touched or scrolled into view */
         #portfolio .group img,
@@ -202,7 +202,8 @@
 
         .slider-track {
             display: flex;
-            width: calc(200px * 8); /* 4 images * 2 for seamless loop */
+            gap: 0;
+            white-space: nowrap;
         }
         
         .slider-fade-mask {
@@ -240,103 +241,111 @@
 </div>
 </section>
 <!-- Auto Slider Section -->
-<section class="w-full overflow-hidden slider-fade-mask stagger-4 py-4">
+<section class="w-full overflow-hidden slider-fade-mask stagger-4 py-2">
 <div class="slider-track animate-scroll-left">
-<!-- First set of images -->
-<div class="w-[200px] flex-shrink-0 px-2">
-<div class="h-32 rounded-none overflow-hidden glass">
-<img alt="Photography slide 1" class="w-full h-full object-cover" src="https://res.cloudinary.com/dqfmw2dh0/image/upload/c_fill,w_600,h_600,q_auto,f_auto/r1k1_hljyda.jpg"/>
-</div>
-</div>
-<div class="w-[200px] flex-shrink-0 px-2">
-<div class="h-32 rounded-none overflow-hidden glass">
-<img alt="Photography slide 2" class="w-full h-full object-cover" src="https://res.cloudinary.com/dqfmw2dh0/image/upload/c_fill,w_600,h_600,q_auto,f_auto/r1k2_osryit.jpg"/>
-</div>
-</div>
-<div class="w-[200px] flex-shrink-0 px-2">
-<div class="h-32 rounded-none overflow-hidden glass">
-<img alt="Photography slide 3" class="w-full h-full object-cover" src="https://res.cloudinary.com/dqfmw2dh0/image/upload/c_fill,w_600,h_600,q_auto,f_auto/r1k3_ztcs5r.jpg"/>
-</div>
-</div>
-<div class="w-[200px] flex-shrink-0 px-2">
-<div class="h-32 rounded-none overflow-hidden glass">
-<img alt="Photography slide 4" class="w-full h-full object-cover" src="https://res.cloudinary.com/dqfmw2dh0/image/upload/c_fill,w_600,h_600,q_auto,f_auto/r2k1_t4omcy.jpg"/>
-</div>
-</div>
-<!-- Duplicate set for seamless loop -->
-<div class="w-[200px] flex-shrink-0 px-2">
-<div class="h-32 rounded-none overflow-hidden glass">
-<img alt="Photography slide 1" class="w-full h-full object-cover" src="https://res.cloudinary.com/dqfmw2dh0/image/upload/c_fill,w_600,h_600,q_auto,f_auto/r1k1_hljyda.jpg"/>
-</div>
-</div>
-<div class="w-[200px] flex-shrink-0 px-2">
-<div class="h-32 rounded-none overflow-hidden glass">
-<img alt="Photography slide 2" class="w-full h-full object-cover" src="https://res.cloudinary.com/dqfmw2dh0/image/upload/c_fill,w_600,h_600,q_auto,f_auto/r1k2_osryit.jpg"/>
-</div>
-</div>
-<div class="w-[200px] flex-shrink-0 px-2">
-<div class="h-32 rounded-none overflow-hidden glass">
-<img alt="Photography slide 3" class="w-full h-full object-cover" src="https://res.cloudinary.com/dqfmw2dh0/image/upload/c_fill,w_600,h_600,q_auto,f_auto/r1k3_ztcs5r.jpg"/>
-</div>
-</div>
-<div class="w-[200px] flex-shrink-0 px-2">
-<div class="h-32 rounded-none overflow-hidden glass">
-<img alt="Photography slide 4" class="w-full h-full object-cover" src="https://res.cloudinary.com/dqfmw2dh0/image/upload/c_fill,w_600,h_600,q_auto,f_auto/r2k1_t4omcy.jpg"/>
-</div>
-</div>
+    <!-- First set of images (6) -->
+    <div class="w-[200px] flex-shrink-0">
+        <div class="h-40 rounded-none overflow-hidden">
+            <img alt="slide jl1" class="w-full h-full object-cover" src="https://res.cloudinary.com/dqfmw2dh0/image/upload/v1779012268/jl1_esuced.jpg"/>
+        </div>
+    </div>
+    <div class="w-[200px] flex-shrink-0">
+        <div class="h-40 rounded-none overflow-hidden">
+            <img alt="slide jl4" class="w-full h-full object-cover" src="https://res.cloudinary.com/dqfmw2dh0/image/upload/v1779012267/jl4_fwoxeo.jpg"/>
+        </div>
+    </div>
+    <div class="w-[200px] flex-shrink-0">
+        <div class="h-40 rounded-none overflow-hidden">
+            <img alt="slide jl2" class="w-full h-full object-cover" src="https://res.cloudinary.com/dqfmw2dh0/image/upload/v1779012267/jl2_u4leyw.jpg"/>
+        </div>
+    </div>
+    <div class="w-[200px] flex-shrink-0">
+        <div class="h-40 rounded-none overflow-hidden">
+            <img alt="slide jl3" class="w-full h-full object-cover" src="https://res.cloudinary.com/dqfmw2dh0/image/upload/v1779012266/jl3_v6qqot.jpg"/>
+        </div>
+    </div>
+    <div class="w-[200px] flex-shrink-0">
+        <div class="h-40 rounded-none overflow-hidden">
+            <img alt="slide jl5" class="w-full h-full object-cover" src="https://res.cloudinary.com/dqfmw2dh0/image/upload/v1779012267/jl5_k3th6w.jpg"/>
+        </div>
+    </div>
+    <div class="w-[200px] flex-shrink-0">
+        <div class="h-40 rounded-none overflow-hidden">
+            <img alt="slide jl6" class="w-full h-full object-cover" src="https://res.cloudinary.com/dqfmw2dh0/image/upload/v1779012267/jl6_fowfcl.jpg"/>
+        </div>
+    </div>
+    <!-- Duplicate for seamless loop -->
+    <div class="w-[200px] flex-shrink-0">
+        <div class="h-40 rounded-none overflow-hidden">
+            <img alt="slide jl1" class="w-full h-full object-cover" src="https://res.cloudinary.com/dqfmw2dh0/image/upload/v1779012268/jl1_esuced.jpg"/>
+        </div>
+    </div>
+    <div class="w-[200px] flex-shrink-0">
+        <div class="h-40 rounded-none overflow-hidden">
+            <img alt="slide jl4" class="w-full h-full object-cover" src="https://res.cloudinary.com/dqfmw2dh0/image/upload/v1779012267/jl4_fwoxeo.jpg"/>
+        </div>
+    </div>
+    <div class="w-[200px] flex-shrink-0">
+        <div class="h-40 rounded-none overflow-hidden">
+            <img alt="slide jl2" class="w-full h-full object-cover" src="https://res.cloudinary.com/dqfmw2dh0/image/upload/v1779012267/jl2_u4leyw.jpg"/>
+        </div>
+    </div>
+    <div class="w-[200px] flex-shrink-0">
+        <div class="h-40 rounded-none overflow-hidden">
+            <img alt="slide jl3" class="w-full h-full object-cover" src="https://res.cloudinary.com/dqfmw2dh0/image/upload/v1779012266/jl3_v6qqot.jpg"/>
+        </div>
+    </div>
+    <div class="w-[200px] flex-shrink-0">
+        <div class="h-40 rounded-none overflow-hidden">
+            <img alt="slide jl5" class="w-full h-full object-cover" src="https://res.cloudinary.com/dqfmw2dh0/image/upload/v1779012267/jl5_k3th6w.jpg"/>
+        </div>
+    </div>
+    <div class="w-[200px] flex-shrink-0">
+        <div class="h-40 rounded-none overflow-hidden">
+            <img alt="slide jl6" class="w-full h-full object-cover" src="https://res.cloudinary.com/dqfmw2dh0/image/upload/v1779012267/jl6_fowfcl.jpg"/>
+        </div>
+    </div>
 </div>
 </section>
 <!-- Interactive Links (moved below gallery for better flow on mobile) -->
 <!-- placeholder: Consultation & Showcase block relocated below the portfolio -->
 <!-- Featured Work - 2x3 Grid -->
-<section class="flex flex-col gap-stack-md pt-4 px-margin-mobile" id="portfolio">
+<section class="flex flex-col gap-stack-md pt-4 px-4" id="portfolio">
 <div class="flex items-baseline justify-between scroll-reveal">
 <h2 class="font-label-caps text-label-caps text-white">THE GALLERY</h2>
 <span class="text-[10px] text-on-surface-variant font-bold">ARCHIVE '24</span>
 </div>
 <!-- 3-column by 2-row grid (mobile: 2 columns for larger items) -->
-<div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+<div class="grid grid-cols-2 sm:grid-cols-1 gap-1">
 <!-- Item 1 -->
-<div class="relative group aspect-square rounded-none overflow-hidden glass scroll-reveal cursor-pointer">
-<img alt="Gallery Item 1" class="w-full h-full object-cover grayscale transition-all duration-1000 group-hover:grayscale-0 group-hover:scale-105 gallery-img" loading="lazy" decoding="async" src="https://res.cloudinary.com/dqfmw2dh0/image/upload/c_fill,w_600,h_600,q_auto,f_auto/r1k1_hljyda.jpg"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90 transition-opacity group-hover:opacity-100"></div>
-
+<div class="relative group aspect-square rounded-none overflow-hidden scroll-reveal cursor-pointer">
+    <img alt="Gallery Item 1" class="w-full h-full object-cover grayscale transition-all duration-1000 group-hover:grayscale-0 group-hover:scale-105 gallery-img" loading="lazy" decoding="async" src="https://res.cloudinary.com/dqfmw2dh0/image/upload/c_fill,w_600,h_600,q_auto,f_auto/r1k1_hljyda.jpg"/>
 </div>
 <!-- Item 2 -->
-<div class="relative group aspect-square rounded-none overflow-hidden glass scroll-reveal cursor-pointer" style="transition-delay: 100ms;">
-<img alt="Gallery Item 2" class="w-full h-full object-cover grayscale transition-all duration-1000 group-hover:grayscale-0 group-hover:scale-105 gallery-img" loading="lazy" decoding="async" src="https://res.cloudinary.com/dqfmw2dh0/image/upload/c_fill,w_600,h_600,q_auto,f_auto/r1k2_osryit.jpg"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90 transition-opacity group-hover:opacity-100"></div>
-
+<div class="relative group aspect-square rounded-none overflow-hidden scroll-reveal cursor-pointer" style="transition-delay: 100ms;">
+    <img alt="Gallery Item 2" class="w-full h-full object-cover grayscale transition-all duration-1000 group-hover:grayscale-0 group-hover:scale-105 gallery-img" loading="lazy" decoding="async" src="https://res.cloudinary.com/dqfmw2dh0/image/upload/c_fill,w_600,h_600,q_auto,f_auto/r1k2_osryit.jpg"/>
 </div>
 <!-- Item 3 -->
-<div class="relative group aspect-square rounded-none overflow-hidden glass scroll-reveal cursor-pointer" style="transition-delay: 200ms;">
-<img alt="Gallery Item 3" class="w-full h-full object-cover grayscale transition-all duration-1000 group-hover:grayscale-0 group-hover:scale-105 gallery-img" loading="lazy" decoding="async" src="https://res.cloudinary.com/dqfmw2dh0/image/upload/c_fill,w_600,h_600,q_auto,f_auto/r1k3_ztcs5r.jpg"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90 transition-opacity group-hover:opacity-100"></div>
-
+<div class="relative group aspect-square rounded-none overflow-hidden scroll-reveal cursor-pointer" style="transition-delay: 200ms;">
+    <img alt="Gallery Item 3" class="w-full h-full object-cover grayscale transition-all duration-1000 group-hover:grayscale-0 group-hover:scale-105 gallery-img" loading="lazy" decoding="async" src="https://res.cloudinary.com/dqfmw2dh0/image/upload/c_fill,w_600,h_600,q_auto,f_auto/r1k3_ztcs5r.jpg"/>
 </div>
 <!-- Item 4 -->
-<div class="relative group aspect-square rounded-none overflow-hidden glass scroll-reveal cursor-pointer" style="transition-delay: 300ms;">
-<img alt="Gallery Item 4" class="w-full h-full object-cover grayscale transition-all duration-1000 group-hover:grayscale-0 group-hover:scale-105 gallery-img" loading="lazy" decoding="async" src="https://res.cloudinary.com/dqfmw2dh0/image/upload/c_fill,w_600,h_600,q_auto,f_auto/r2k1_t4omcy.jpg"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90 transition-opacity group-hover:opacity-100"></div>
-
+<div class="relative group aspect-square rounded-none overflow-hidden scroll-reveal cursor-pointer" style="transition-delay: 300ms;">
+    <img alt="Gallery Item 4" class="w-full h-full object-cover grayscale transition-all duration-1000 group-hover:grayscale-0 group-hover:scale-105 gallery-img" loading="lazy" decoding="async" src="https://res.cloudinary.com/dqfmw2dh0/image/upload/c_fill,w_600,h_600,q_auto,f_auto/r2k1_t4omcy.jpg"/>
 </div>
 <!-- Item 5 -->
-<div class="relative group aspect-square rounded-none overflow-hidden glass scroll-reveal cursor-pointer" style="transition-delay: 400ms;">
-<img alt="Gallery Item 5" class="w-full h-full object-cover grayscale transition-all duration-1000 group-hover:grayscale-0 group-hover:scale-105 gallery-img" loading="lazy" decoding="async" src="https://res.cloudinary.com/dqfmw2dh0/image/upload/c_fill,w_600,h_600,q_auto,f_auto/r2k2_endskg.jpg"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90 transition-opacity group-hover:opacity-100"></div>
-
+<div class="relative group aspect-square rounded-none overflow-hidden scroll-reveal cursor-pointer" style="transition-delay: 400ms;">
+    <img alt="Gallery Item 5" class="w-full h-full object-cover grayscale transition-all duration-1000 group-hover:grayscale-0 group-hover:scale-105 gallery-img" loading="lazy" decoding="async" src="https://res.cloudinary.com/dqfmw2dh0/image/upload/c_fill,w_600,h_600,q_auto,f_auto/r2k2_endskg.jpg"/>
 </div>
 <!-- Item 6 -->
-<div class="relative group aspect-square rounded-none overflow-hidden glass scroll-reveal cursor-pointer" style="transition-delay: 500ms;">
-<img alt="Gallery Item 6" class="w-full h-full object-cover grayscale transition-all duration-1000 group-hover:grayscale-0 group-hover:scale-105 gallery-img" loading="lazy" decoding="async" src="https://res.cloudinary.com/dqfmw2dh0/image/upload/c_fill,w_600,h_600,q_auto,f_auto/r2k3_ik4ubd.jpg"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90 transition-opacity group-hover:opacity-100"></div>
-
+<div class="relative group aspect-square rounded-none overflow-hidden scroll-reveal cursor-pointer" style="transition-delay: 500ms;">
+    <img alt="Gallery Item 6" class="w-full h-full object-cover grayscale transition-all duration-1000 group-hover:grayscale-0 group-hover:scale-105 gallery-img" loading="lazy" decoding="async" src="https://res.cloudinary.com/dqfmw2dh0/image/upload/c_fill,w_600,h_600,q_auto,f_auto/r2k3_ik4ubd.jpg"/>
 </div>
 </div>
 </section>
 
 <!-- Consultation & Showcase (moved here for better flow on mobile) -->
-<div class="grid grid-cols-2 gap-4 stagger-6 px-margin-mobile">
+<div class="grid grid-cols-2 gap-3 stagger-6 px-4">
     <a class="flex flex-col gap-3 glass p-5 rounded-2xl transition-all hover:bg-white/[0.08] hover:scale-[1.03] active:scale-[0.97] hover:border-accent-purple/30 group" href="https://wa.me/6282170657050" target="_blank" rel="noopener">
         <span class="material-symbols-outlined text-accent-purple group-hover:scale-110 transition-transform">chat</span>
         <span class="font-button-text text-sm font-bold">Consultation</span>
